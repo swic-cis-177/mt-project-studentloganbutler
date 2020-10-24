@@ -3,6 +3,13 @@ form {
   width: 550px;
 }
 
+button {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
 button:focus,
 button:hover {
   background-color: aqua;
