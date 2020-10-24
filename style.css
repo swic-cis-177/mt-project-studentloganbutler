@@ -1,3 +1,25 @@
+form {
+  display: flex;
+  margin: 10vmin;
+  width: 550px;
+}
+
+label {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+button:focus,
+button:hover {
+  background-color: aqua;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 #textFields {
   text-align: center;
 }
@@ -22,7 +44,7 @@ legend {
   color: #00008b;
 }
 
-#Title {
+#title {
   font-size: large;
   margin-left: auto;
   margin-right: auto;
