@@ -4,12 +4,6 @@ form {
   width: 550px;
 }
 
-label {
-  left: -9999px;
-  position: absolute;
-  top: -9999px;
-}
-
 button:focus,
 button:hover {
   background-color: aqua;
