@@ -9,3 +9,11 @@
   min-width: 900px;
   width: 3%;
 }
+
+fieldset {
+  border: groove #45094f;
+  border-radius: 2em;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  width: auto;
+}
