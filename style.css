@@ -52,3 +52,22 @@ legend {
   max-width: 1280px;
   min-width: 900px;
 }
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+tbody tr:nth-child(odd) {
+  background: rgb(252, 222, 222);
+}
+
+td {
+  margin: 0;
+  padding: 0.25rem;
+}
+
+td:nth-child(3) {
+  text-align: center;
+}
