@@ -3,42 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Activities</title>
   </head>
-  <div id="wrapper">
-    <div id="textFields">
+
   <body>
-    <script src="./scripts.js"></script>
-<div class = "flex">
-  <br><br><br><div><label for="name">Name:</label><br><input type="text" id="name" name="user_name"><br></div>
+    <div id="wrapper">
+      <div id="textFields">
+        <div class="flex">
+          <div>
+            <label for="name">Name:</label
+            ><input type="text" id="name" name="user_name" />
+          </div>
 
-<div><label for="mail">E-mail:</label><br><input type="email" id="mail" name="user_email"></div><br>
-</div>
+          <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" />
+          </div>
+        </div>
 
+        <fieldset>
+          <legend>Activity Type:</legend>
+          <input type="radio" id="Swimming" name="activity" value="Swimming" />
+          <label for="swimming">Swimming</label>
+          <input type="radio" id="Weights" name="activity" value="Weights" />
+          <label for="weights">Weights</label>
+          <input type="radio" id="yoga" name="activity" value="yoga" />
+          <label for="yoga">Yoga</label>
+          <input type="radio" id="aerobics" name="activity" value="aerobics" />
+          <label for="Aerobics">Aerobics</label>
+          <input type="radio" id="other" name="activity" value="other" />
+          <label for="other">Other (Specify in "Additional Questions")</label>
+        </fieldset>
 
-    <fieldset>
-      <legend> Activity Type:</legend>
-      <input type="radio"id="Swimming"name="activity"value="Swimming">
-  <label for="swimming">Swimming</label>
-     <input type="radio" id="Weights" name="activity" value="Weights">
-  <label for="weights">Weights</label><br>
-      <input type="radio" id="yoga" name="activity"value="yoga">
-  <label for="yoga">Yoga</label>
-      <input type="radio"id="aerobics"name="activity"value="aerobics">
-  <label for="Aerobics">Aerobics</label><br>
-    <input type="radio" id="other" name="activity" value="other">
-  <label for="other">Other (Specify in "Additional Questions")</label>
+        <label for="msg">Additional Questions:</label>
+        <div>
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <button>Confirm Activity</button>
 
-    </fieldset><br>
-
-    <label for="msg">Additional Questions:</label>
-    <div>
-    <textarea id="msg" name="user_message"></textarea><br><br>
+        <script src="./scripts.js"></script>
+      </div>
     </div>
-     <button>Confirm Activity</button>
   </body>
-  </div>
-  </div>
 </html>
