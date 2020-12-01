@@ -10,6 +10,7 @@ module.exports = {
   },
   rules: {
     "array-callback-return": "warn",
+    "import/prefer-default-export": "warn",
     "no-unused-vars": "warn",
   },
 };
