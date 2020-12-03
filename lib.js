@@ -13,9 +13,13 @@ export const createActivity = (elements) =>
       };
     }, {});
 
-export const createActivityTable = (data) => {
+/**
+ * export const addTableRow = (newActivityInput) => {
+      newActivityInput.
+    }
+ //const addActivity = (elements) => {
   // For each thing that is in data (object)...
-  data.forEach(
+  elements.forEach(
     (
       // Destructure (pull out) the 🔑s that we want
       { name, email, questions }
@@ -36,3 +40,5 @@ export const createActivityTable = (data) => {
     }
   );
 };
+ *
+ */
