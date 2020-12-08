@@ -1,23 +1,22 @@
 const tbody = document.querySelector("tbody");
 const template = document.querySelector("template");
 
-export const createActivity = (elements) =>
+const createActivity = (elements) =>
   Array.from(elements)
-    // Filter out stuff that has an id
     .filter(({ id }) => id)
-    .reduce((activity, { id, value }) => {
-      return {
-        // Spread out whatever is in  'activity' each time
-        ...activity,
+    .reduce(
+      (formInfo, { id, value }) => ({
+        ...formInfo,
         [id]: value,
-      };
-    }, {});
+      }),
+      {}
+    );
 
-/**
- * export const addTableRow = (newActivityInput) => {
-      newActivityInput.
-    }
- //const addActivity = (elements) => {
+export const addTableRow = (elements) => ({
+  ...createActivity(elements),
+});
+
+export const addActivity = (elements) => {
   // For each thing that is in data (object)...
   elements.forEach(
     (
@@ -40,5 +39,3 @@ export const createActivity = (elements) =>
     }
   );
 };
- *
- */
