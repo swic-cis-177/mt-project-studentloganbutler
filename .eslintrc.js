@@ -10,7 +10,7 @@ module.exports = {
   },
   rules: {
     "array-callback-return": "warn",
-    "import/prefer-default-export": "off",
+    "no-confusing-arrow": "off",
     "no-unused-vars": "warn",
   },
 };
