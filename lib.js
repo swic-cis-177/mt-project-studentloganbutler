@@ -1,7 +1,7 @@
 const tbody = document.querySelector("tbody");
 const template = document.querySelector("template");
 
-export const createActivity = (elements) =>
+const createActivity = (elements) =>
   Array.from(elements)
     .filter(({ id }) => id)
     .reduce(
