@@ -10,6 +10,7 @@ module.exports = {
   },
   rules: {
     "array-callback-return": "warn",
+    "import/extensions": "warn",
     "no-confusing-arrow": "off",
     "no-unused-vars": "warn",
   },

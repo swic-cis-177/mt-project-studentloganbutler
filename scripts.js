@@ -1,12 +1,17 @@
-import { createActivity } from "./lib.js";
+import { addTableRow, addActivity } from "./lib.js";
 
 const form = document.querySelector("form");
+
+const render = (elements) => {
+  addActivity(elements);
+};
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // Send over the elements that was just submitted
-  const formData = createActivity(event.target.elements);
+  const formData = addTableRow(event.target.elements);
 
-  // TODO: Generate a table that shows (name, email, and questions) (Note to self, student HW will help)
+  addActivity.push(addTableRow(event.target.elements));
+  render(formData);
 });
