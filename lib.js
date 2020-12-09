@@ -1,6 +1,16 @@
 const tbody = document.querySelector("tbody");
 const template = document.querySelector("template");
 
+/**
+ *TODO:
+ * What is supposed to happen:
+ * 1)Create a table that contains three rows
+ * 2)Have these rows contain elements with an ID and value
+ * 3) Have these three rows have the value of a Name, Email, and Additional Question.
+ *
+ *
+ */
+
 const createActivity = (elements) =>
   Array.from(elements)
     .filter(({ id }) => id)
